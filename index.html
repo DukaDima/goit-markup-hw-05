@@ -52,7 +52,7 @@
       <section class="hero-type overlay">
         <div class="container">
          <h1 class="hero-text">эффективные решения<br>для вашего бизнеса</h1>
-          <button type="button" class="button primary">Заказать услугу</button>
+          <button type="button" class="button primary" data-modal-open>Заказать услугу</button>
         </div>
       </section>
 
@@ -87,13 +87,22 @@
            <h2 class="title-text task-title">Чем мы занимаемся</h2>
            <ul class="ul-nostyle task-list">
              <li class="task-element">
+               <div class="task-img">
                  <img src="./images/box-1-min.jpg" alt="img1" width="370">
+                 <p class="task-name">Десктопные приложения</p>
+               </div>  
              </li>
              <li class="task-element">
-                 <img src="./images/box-2-min.jpg" alt="img2" width="370">
+              <div class="task-img">
+                   <img src="./images/box-2-min.jpg" alt="img2" width="370">
+                   <p class="task-name">Мобильные приложения</p>
+               </div>  
              </li>
              <li class="task-element">
-                 <img src="./images/box-3-min.jpg" alt="img3" width="370">
+               <div class="task-img">
+                  <img src="./images/box-3-min.jpg" alt="img3" width="370">
+                  <p class="task-name">Дизайнерские решения</p>
+               </div>  
              </li>
            </ul>
         </div>
@@ -384,5 +393,28 @@
     </div>
      
     </footer>   
+    
+<!--Модальное окно-->
+
+    <div class="backdrop is-hidden" data-modal>
+
+         <div class="modal">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Magni, quo. Dolores, odit maxime aliquam corrupti magni 
+            quibusdam recusandae repellat accusamus perspiciatis, 
+            doloribus beatae adipisci blanditiis incidunt natus 
+            fugit odio ipsa!</p>
+            <button data-modal-close type="button" class="modal-button">
+              <svg  class=cross width=11 height=11 >
+                <use href="./images/symbol-defs.svg#cross"></use>
+             </svg>     
+            </button>
+
+         </div>
+    </div>
+<!--Скрипт-->
+
+  <script src="./js/modal.js"></script>
+
   </body>
 </html>
